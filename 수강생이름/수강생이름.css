@@ -1,0 +1,134 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+fieldset[name="main"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  background-color: white;
+}
+
+fieldset[name="main"] legend {
+  font-weight: bold;
+  font-size: 1.1em;
+  background-color: white;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+fieldset[name="main"] div {
+  margin-bottom: 10px;
+  /* width: 120%; */
+  border: none;
+  border-radius: 0;
+  display: flex; 
+  align-items: center; 
+}
+
+fieldset[name="main"] label {
+  display: inline-block;
+  width: 80px;
+  margin-right: 10px;
+  flex-shrink: 0; 
+}
+
+fieldset[name="main"] input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%; 
+  box-sizing: border-box;
+  background-color: white;
+  flex-grow: 1; 
+}
+
+fieldset[name="main"] textarea#content {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%; 
+  box-sizing: border-box;
+  background-color: white;
+  height: auto;
+  resize: none;
+  flex-grow: 1;
+}
+
+fieldset[name="main"] div:nth-child(3) textarea#content {
+  height: calc(1.5em * 5 + 16px);
+}
+
+fieldset[name="main"] input[type="file"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  width: 100%; 
+  box-sizing: border-box;
+  background-color: white;
+  flex-grow: 1; 
+}
+
+hr {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+div[name="list"] table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+div[name="list"] th, div[name="list"] td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  background-color: lightyellow;
+}
+
+div[name="list"] th {
+  background-color: orange;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+div[name="list"] tbody td {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+div[name="list"] tbody td .notice-title {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 0;
+  width: 100%;
+}
+
+div[name="list"] tfoot td {
+  text-align: center;
+  padding-top: 15px;
+  background-color: orange;
+  color: white;
+  border: 1px solid black;
+}
+
+div[name="list"] tfoot tr:last-child td {
+  text-align: center;
+  padding-bottom: 10px;
+  background-color: orange;
+  color: white;
+}

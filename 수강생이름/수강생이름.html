@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항 관리</title>
+    <link rel="stylesheet" href="수강생이름.css">
+</head>
+<body>
+    <h1>포트폴리오 문제</h1>
+
+    <fieldset name="main">
+        <legend>공지사항 작성하기</legend>
+        <form action="insert.no" method="post">
+            <div>
+                <label for="title">제목</label>
+                <input type="text" id="title" name="title" placeholder="제목을 입력하시오" required>
+            </div>
+            <div>
+                <label for="content">내용</label>
+                <textarea id="content" name="content" placeholder="내용을 입력하시오" rows="5" required></textarea>
+            </div>
+            <div>
+                <label for="uploadFile">첨부파일</label>
+                <input type="file" id="uploadFile" name="uploadFile">
+            </div>
+            <button type="submit" name="submit">작성하기</button>
+        </form>
+    </fieldset>
+    <hr>
+    <div name="list">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 60px;">번호</th>
+                    <th colspan="2" style="width: 60%;">제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                    <th>조회수</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <form action="#" method="post">
+                        <td style="width: 60px;">9</td>
+                        <td style="width: 48%;">
+                            <span class="notice-title">공지 사항 제목 9</span>
+                        </td>
+                        <td style="width: 12%;">
+                            <button type="submit">바로 가기</button>
+                        </td>
+                        <td>user01</td>
+                        <td>2021-03-29</td>
+                        <td>34</td>
+                    </form>
+                </tr>
+                <tr>
+                    <form action="#" method="post">
+                        <td style="width: 60px;">6</td>
+                        <td style="width: 48%;">
+                            <span class="notice-title">공지 사항 제목 6</span>
+                        </td>
+                        <td style="width: 12%;">
+                            <button type="submit">바로 가기</button>
+                        </td>
+                        <td>answ445</td>
+                        <td>2021-03-12</td>
+                        <td>67</td>
+                    </form>
+                </tr>
+                <tr>
+                    <form action="#" method="post">
+                        <td style="width: 60px;">3</td>
+                        <td style="width: 48%;">
+                            <span class="notice-title">공지 사항 제목 3</span>
+                        </td>
+                        <td style="width: 12%;">
+                            <button type="submit">바로 가기</button>
+                        </td>
+                        <td>testg12</td>
+                        <td>2021-03-01</td>
+                        <td>98</td>
+                    </form>
+                </tr>
+                <tr>
+                    <form action="#" method="post">
+                        <td style="width: 60px;">2</td>
+                        <td style="width: 48%;">
+                            <span class="notice-title">공지 사항 제목 2</span>
+                        </td>
+                        <td style="width: 12%;">
+                            <button type="submit">바로 가기</button>
+                        </td>
+                        <td>palwe3</td>
+                        <td>2021-01-02</td>
+                        <td>85</td>
+                    </form>
+                </tr>
+                <tr>
+                    <form action="#" method="post">
+                        <td style="width: 60px;">1</td>
+                        <td style="width: 48%;">
+                            <span class="notice-title">공지 사항 제목 1</span>
+                        </td>
+                        <td style="width: 12%;">
+                            <button type="submit">바로 가기</button>
+                        </td>
+                        <td>xm123</td>
+                        <td>2020-12-24</td>
+                        <td>124</td>
+                    </form>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">전체 공지사항 갯수</td>
+                    <td colspan="2" style="text-align: center;">5개</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
